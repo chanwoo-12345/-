@@ -41,3 +41,20 @@ menuItems.forEach(item => {
     document.getElementById(target).classList.add("active");
   });
 });
+// -----------------------------
+//    오늘 날짜 자동 표시 기능
+// -----------------------------
+
+function setTodayDate() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+
+  const dateElement = document.querySelector(".content-date");
+  if (dateElement) {
+    dateElement.textContent = `${year}.${month}.${day}`;
+  }
+}
+
+setTodayDate(); // 페이지 로드 시 자동 실행
