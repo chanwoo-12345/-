@@ -10,7 +10,7 @@
 
 body {
   font-family: "돋움", "Dotum", system-ui, -apple-system, BlinkMacSystemFont;
-  background: #f5f0ff;
+  background: url("bg-paper-grid.png") center/cover no-repeat fixed;
   display: flex;
   justify-content: center;
   align-items: flex-start;   /* ⭐ 수직 정렬 */
