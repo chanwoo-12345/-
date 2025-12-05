@@ -31,6 +31,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  z-index: 1;  /* ★ mini-home보다 뒤로 배치 */
 }
 
 .layer1 { top: 70px;  }
