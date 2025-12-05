@@ -29,9 +29,9 @@ body {
   box-shadow: 0 12px 32px rgba(0,0,0,0.18);
 }
 
-.layer1 { top: 80px; opacity: 1; }
-.layer2 { top: 95px; opacity: 0.95; }
-.layer3 { top: 110px; opacity: 0.9; }
+.layer1 { top: 70px; opacity: 1; }
+.layer2 { top: 82px; opacity: 0.95; }
+.layer3 { top: 94px; opacity: 0.9; }
 
 /* ===========================
    미니홈피 메인 박스
@@ -41,7 +41,7 @@ body {
   min-height: 650px;
   background: white;
   border: 3px solid #c3b6ff;
-  margin-top: 130px;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 260px 1fr;
   position: relative;
@@ -93,17 +93,16 @@ body {
 .left-panel {
   border-right: 1px solid #e5deff;
   background: #faf7ff;
-  padding: 10px;
+  padding: 0 10px 10px 10px; /* 위 0, 나머지 10 */
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-/* 프로필 카드 */
 .profile-card {
   background: white;
   border: 1px solid #d3c7ff;
-  padding: 10px;
+  padding: 0 10px 10px 10px; /* 위쪽 0 */
 }
 
 .profile-photo {
