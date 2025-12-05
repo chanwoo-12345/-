@@ -45,3 +45,145 @@ body {
   color: red;
   font-size: 12px;
 }
+/* ----------------------------- */
+/*   미니홈피 전체 레이아웃 CSS   */
+/* ----------------------------- */
+
+/* 전체 페이지 배경 */
+body {
+  background: #f5f0ff;
+  font-family: "돋움", sans-serif;
+}
+
+/* 미니홈피 컨테이너 */
+.mini-home {
+  width: 900px;
+  min-height: 600px;
+  background: #ffffff;
+  border: 3px solid #c3b6ff;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 상단바 */
+.top-bar {
+  grid-column: 1 / 3;
+  background: #e8ddff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c3b6ff;
+}
+
+.top-title {
+  font-weight: bold;
+}
+
+/* 왼쪽 패널 */
+.left-panel {
+  background: #faf7ff;
+  border-right: 1px solid #e2ddff;
+  padding: 12px;
+}
+
+/* 프로필 카드 */
+.profile-card {
+  background: #fff;
+  border: 1px solid #d3c7ff;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 200px;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* 메뉴 */
+.menu {
+  background: #fff;
+  border: 1px solid #d3c7ff;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item:hover {
+  background: #f4f0ff;
+}
+
+/* 오른쪽 본문 영역 */
+.right-panel {
+  padding: 12px;
+  display: grid;
+  grid-template-rows: 180px 1fr;
+}
+
+/* 미니룸 */
+.miniroom {
+  background: #fffdf8;
+  border: 1px solid #d3c7ff;
+  padding: 8px;
+}
+
+.miniroom-label {
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.miniroom-scene {
+  background: #f7f4ff;
+  border: 1px solid #d3c7ff;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 컨텐츠 */
+.content {
+  background: #ffffff;
+  border: 1px solid #d3c7ff;
+  padding: 10px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+.content-title {
+  font-weight: bold;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
