@@ -102,7 +102,7 @@ body {
 .profile-card {
   background: white;
   border: 1px solid #d3c7ff;
-  padding: 0 10px 10px 10px; /* 위쪽 0 */
+  padding: 10 10px 10px 10px; /* 위쪽 0 */
 }
 
 .profile-photo {
