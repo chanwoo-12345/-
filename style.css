@@ -77,6 +77,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+.top-bgm {
+  display: flex;
+  align-items: center;
+  gap: 8px;              /* 요소 간 간격 */
+  font-size: 11px;
+  white-space: nowrap;   /* 줄바꿈 방지 */
+}
+
+.top-bgm strong {
+  font-weight: bold;
+  margin-right: 6px;     /* 텍스트와 버튼 사이 여유 */
+}
+
 /* BGM 버튼 */
 .top-bgm button {
   border: 1px solid #bba8ff;
