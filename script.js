@@ -112,9 +112,10 @@ if (guestForm) {
     5. BGM 기능
 =============================== */
 
-// 오디오 객체 생성
-let bgm = new Audio("bgm.mp3");
+// 오디오 요소 연결
+let bgm = document.getElementById("bgm");
 bgm.loop = true;
+
 
 const playBtn = document.getElementById("play-btn");
 const pauseBtn = document.getElementById("pause-btn");
@@ -128,7 +129,6 @@ if (playBtn) {
   });
 }
 
-// 일시정지 버튼
 if (pauseBtn) {
   pauseBtn.addEventListener("click", () => {
     bgm.pause();
@@ -136,3 +136,5 @@ if (pauseBtn) {
     playBtn.classList.remove("active");
   });
 }
+
+
