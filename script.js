@@ -16,3 +16,28 @@ function login() {
 
 // 로그인 버튼 클릭 시 login() 실행
 document.getElementById("login-btn").addEventListener("click", login);
+
+// -----------------------------
+//   메뉴 클릭 시 화면 전환 기능
+// -----------------------------
+
+const menuItems = document.querySelectorAll(".menu-item");
+const sections = document.querySelectorAll(".content-section");
+
+// 메뉴 클릭하면 실행되는 함수
+menuItems.forEach(item => {
+  item.addEventListener("click", () => {
+
+    // 모든 메뉴 active 제거
+    menuItems.forEach(m => m.classList.remove("active"));
+    // 클릭한 메뉴에 active 추가
+    item.classList.add("active");
+
+    // 모든 content-section 숨기기
+    sections.forEach(sec => sec.classList.remove("active"));
+
+    // 클릭한 메뉴와 동일한 id를 가진 콘텐츠 보여주기
+    const target = item.getAttribute("data-target");
+    document.getElementById(target).classList.add("active");
+  });
+});
