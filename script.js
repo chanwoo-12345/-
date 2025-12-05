@@ -58,3 +58,34 @@ function setTodayDate() {
 }
 
 setTodayDate(); // 페이지 로드 시 자동 실행
+
+// -----------------------------
+//      방명록 기능 구현
+// -----------------------------
+
+const guestForm = document.getElementById("guestbook-form");
+const guestList = document.getElementById("guestbook-list");
+
+if (guestForm) {
+  guestForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // 새로고침 방지
+
+    const name = document.getElementById("guest-name").value;
+    const message = document.getElementById("guest-message").value;
+
+    // 방명록 항목 HTML 생성
+    const entry = document.createElement("div");
+    entry.classList.add("guest-entry");
+    entry.innerHTML = `
+      <p><strong>${name}</strong></p>
+      <p>${message.replace(/\n/g, "<br>")}</p>
+      <hr>
+    `;
+
+    // 목록 가장 위에 추가
+    guestList.prepend(entry);
+
+    // 폼 초기화
+    guestForm.reset();
+  });
+}
