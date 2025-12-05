@@ -2,10 +2,23 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>미니홈피 프로젝트 시작</title>
+  <title>로그인 - 미니홈피</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>프로젝트 초기 설정</h1>
-  <p>이제부터 기능을 하나씩 추가해 나갈 예정입니다.</p>
+
+  <div class="login-container">
+    <div class="login-box">
+      <h2>미니홈피 로그인</h2>
+
+      <input type="text" id="username" placeholder="아이디" />
+      <input type="password" id="password" placeholder="비밀번호" />
+
+      <button id="login-btn">로그인</button>
+
+      <div id="login-error" class="login-error"></div>
+    </div>
+  </div>
+
 </body>
 </html>
